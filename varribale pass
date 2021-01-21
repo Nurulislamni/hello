@@ -1,0 +1,64 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class MyController extends Controller
+
+
+
+{
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
+
+    public function test(){
+
+
+
+       $heading = "this is my first variable";
+         return view("nurul")->with("h",$heading);
+
+        //  $headin = "this is my second variable pass systems ফঘজধজকদফহগকঝগজকদফ";
+        //  return view("nurul",compact ('headin'));
+        // for view file = <h1>{{$headin}}</h1>
+
+
+        // $data['today'] = date('d-m-y');
+        // $data['time'] = date('H:i:s',);
+        // return view ('nurul', $data);
+        // for view file
+        // <div><h1>{{$today}} {{$time}}</h1></div>
+
+
+    //    $today= date('d-m-y');
+    //    $time = date('H:i:s');
+    //    $location = ['city'=>'Dhaka,','country'=>'Bangladesh'];
+    //  return view("nurul",compact ('today','time','location'));
+    //for view file = <h1> {{$location['city'].''.$location['country']}}</h1>
+
+     //dd($data);
+
+
+// $items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
+//           \Log::debug($items);
+
+        //   \Log::info('Just an informational message.');
+        //   \Log::warning('Something may be going wrong.');
+        //    \Log::error('Something is definitely going wrong.');
+        //    \Log::critical('Danger, Will Robinson! Danger!');
+
+        //    \DebugBar::error($items);
+        //    return view('nurul');
+
+
+    }
+
+
+}
+
+
